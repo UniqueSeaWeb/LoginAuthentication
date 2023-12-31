@@ -1,3 +1,24 @@
+/* フォント定義 */
+@font-face {
+    font-family: "Noto Sans JP";
+    font-style: Nomal;
+    font-weight: 400;
+    src: url("./NotoSansJP-Regular.ttf") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Noto Sans JP";
+    font-style: Bold;
+    font-weight: 700;
+    src: url("./NotoSansJP-Bold.ttf") format("woff2");
+    font-display: swap;
+}
+
+body {
+    font-family: "Noto Sans JP", "MYEFKibanMeiryoGaiji", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", "Meiryo", "ＭＳ　Ｐゴシック", "Helvetica Neue", "Helvetica", "Arial", Sans-Serif;
+}
+
 /* コンポーネント：typo */
 .c_typo_headerXXS {
     font-size: 12px;
@@ -561,4 +582,3 @@
 .c_carousel_selected>.c_carousel_dot {
     background-color: #D9D9D9;
 }
-
