@@ -3,36 +3,64 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
-    <meta http-equiv="Pragma" content="no-cache">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     <title>ログイン</title>
     <!-- 共通CSS -->
-    <link rel="stylesheet" href="../loginForm_files/css/reset.css?20231219">
-    <link rel="stylesheet" href="../loginForm_files/css/components.css?20231219">
+    <link rel="stylesheet" href="https://uniqueseaweb.github.io/prototype/components/files/css/reset.css">
+    <link rel="stylesheet" href="https://uniqueseaweb.github.io/prototype/components/files/css/components.css">
     <!-- 画面個別CSS -->
-    <link rel="stylesheet" href="../loginForm_files/css/login.css?20231219">
+    <link rel="stylesheet" href="../loginForm_files/css/login.css?20240420">
 </head>
 
 <body>
-    <!-- ヘッダー -->
-    <header>
-        <h1 class="c_typo_headerL c_typo_BLK01 c_typo_center">ログイン</h1>
-    </header>
-
     <!-- メイン -->
     <main>
-
+        <section class="pt_loginSec">
+            <form method="get" name="loginForm" action="" class="pt_loginForm">
+                <div class="pt_loginImgWrapper"><img src="../loginForm_files/image/door.jpeg"></div>
+                <div class="pt_textFieldWrapper">
+                    <div class="c_textField03">
+                        <input type="text" placeholder="&nbsp;" tabindex="0" class="c_textField03_inputText"
+                            id="userId">
+                        <p class="c_typo_bodyM c_typo_BLK02">ID</p>
+                    </div>
+                </div>
+                <div class="pt_textFieldWrapper">
+                    <div class="c_textField03">
+                        <input type="password" placeholder="&nbsp;" tabindex="0" class="c_textField03_inputText"
+                            id="password">
+                        <p class="c_typo_bodyM c_typo_BLK02">Password</p>
+                    </div>
+                </div>
+                <div class="pt_loginBtnWrapper">
+                    <a href="javascript:void(0);" tabindex="0" class="c_button01" id="pt_loginBtn">
+                        <p class="c_typo_headerS c_typo_WHT c_typo_center">Login</p>
+                    </a>
+                </div>
+                <div class="pt_linkWrapper">
+                    <div class="c_link01 c_link01_right">
+                        <a tabindex="0" class="c_link01_inner">
+                            <p>Sign up</p>
+                            <div class="c_link01_icon"><svg x="0px" y="0px" viewBox="0 0 512 512">
+                                    <g>
+                                        <path d="M505.64,243.2L285.027,76.072c-10.574-8.016-25.754-0.469-25.754,12.797v71.297
+                                            c0,8.866-7.191,16.058-16.058,16.058H16.058C7.187,176.224,0,183.411,0,192.282v127.437c0,8.867,7.187,16.055,16.058,16.055
+                                            h227.156c8.867,0,16.058,7.191,16.058,16.058v71.297c0,13.27,15.18,20.813,25.754,12.801L505.64,268.797
+                                            C514.12,262.372,514.12,249.625,505.64,243.2z" style="fill: #0068B7;">
+                                        </path>
+                                    </g>
+                                </svg></div>
+                        </a>
+                    </div>
+                </div>
+            </form>
+        </section>
     </main>
 
-    <!-- フッター -->
-    <footer>
-        <p class="c_typo_headerXXS c_typo_BLK01 c_typo_center">&copy;2023 UniqueSea.</p>
-    </footer>
-
     <!-- 共通JavaScript -->
-    <script src="../loginForm_files/css/events.js?20231219"></script>
+    <script src="https://uniqueseaweb.github.io/prototype/components/files/css/events.js"></script>
     <!-- 個別JavaScript -->
-    <script src="../loginForm_files/css/login.js?20231219"></script>
+    <script src="../loginForm_files/css/login.js?20240420"></script>
 </body>
 
 </html>
