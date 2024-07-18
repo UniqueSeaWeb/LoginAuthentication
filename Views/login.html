@@ -1,66 +1,80 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <html lang="ja">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ログイン</title>
-    <!-- 共通CSS -->
-    <link rel="stylesheet" href="https://uniqueseaweb.github.io/prototype/components/files/css/reset.css">
-    <link rel="stylesheet" href="https://uniqueseaweb.github.io/prototype/components/files/css/components.css">
+    <!-- 画面共通CSS -->
+    <link rel="stylesheet" href="../loginAuthentication_files/css/reset.css?20240801">
+    <link rel="stylesheet" href="../loginAuthentication_files/css/components.css?20240801">
+    <link rel="stylesheet" href="../loginAuthentication_files/css/common.css?20240801">
     <!-- 画面個別CSS -->
-    <link rel="stylesheet" href="../loginForm_files/css/login.css?20240420">
+    <link rel="stylesheet" href="../loginAuthentication_files/css/login.css?20240801">
 </head>
 
 <body>
+    <!-- ヘッダー -->
+    <header><img src="../loginAuthentication_files/image/logo_sp.svg" class="com_logo_sp"></img><img
+            src="../loginAuthentication_files/image/logo_pc.svg" class="com_logo_pc"></img>
+        <div class="com_ttl">
+            <h1>ログイン認証</h1>
+        </div>
+    </header>
+
     <!-- メイン -->
     <main>
-        <section class="pt_loginSec">
-            <form method="get" name="loginForm" action="" class="pt_loginForm">
-                <div class="pt_loginImgWrapper"><img src="../loginForm_files/image/door.jpeg"></div>
-                <div class="pt_textFieldWrapper">
-                    <div class="c_textField03">
-                        <input type="text" placeholder="&nbsp;" tabindex="0" class="c_textField03_inputText"
-                            id="userId">
-                        <p class="c_typo_bodyM c_typo_BLK02">ID</p>
+        <section class="l_formSec">
+            <div class="l_formWrapper">
+                <form class="l_form" id="l_form">
+                    <div class="l_formItem">
+                        <div class="c_textField01_ttl">
+                            <p>ユーザーID</p>
+                            <div class="c_textField01_asterisk">
+                                <p>&ast;</p>
+                            </div>
+                        </div>
+                        <div class="c_textField01_content"><input type="text" name="userId" class="c_textField01"
+                                id="l_userId" maxlength="7" autocomplete="username" tabindex="0"></div>
                     </div>
-                </div>
-                <div class="pt_textFieldWrapper">
-                    <div class="c_textField03">
-                        <input type="password" placeholder="&nbsp;" tabindex="0" class="c_textField03_inputText"
-                            id="password">
-                        <p class="c_typo_bodyM c_typo_BLK02">Password</p>
+                    <div class="l_formItem">
+                        <div class="c_textField01_ttl">
+                            <p>パスワード</p>
+                            <div class="c_textField01_asterisk">
+                                <p>&ast;</p>
+                            </div>
+                        </div>
+                        <div class="c_textField01_content"><input type="password" name="password" class="c_textField01"
+                                id="l_password" autocomplete="current-password"></div>
                     </div>
-                </div>
-                <div class="pt_loginBtnWrapper">
-                    <a href="javascript:void(0);" tabindex="0" class="c_button01" id="pt_loginBtn">
-                        <p class="c_typo_headerS c_typo_WHT c_typo_center">Login</p>
-                    </a>
-                </div>
-                <div class="pt_linkWrapper">
-                    <div class="c_link01 c_link01_right">
-                        <a tabindex="0" class="c_link01_inner">
-                            <p>Sign up</p>
-                            <div class="c_link01_icon"><svg x="0px" y="0px" viewBox="0 0 512 512">
-                                    <g>
-                                        <path d="M505.64,243.2L285.027,76.072c-10.574-8.016-25.754-0.469-25.754,12.797v71.297
-                                            c0,8.866-7.191,16.058-16.058,16.058H16.058C7.187,176.224,0,183.411,0,192.282v127.437c0,8.867,7.187,16.055,16.058,16.055
-                                            h227.156c8.867,0,16.058,7.191,16.058,16.058v71.297c0,13.27,15.18,20.813,25.754,12.801L505.64,268.797
-                                            C514.12,262.372,514.12,249.625,505.64,243.2z" style="fill: #0068B7;">
-                                        </path>
-                                    </g>
-                                </svg></div>
-                        </a>
+                    <div class="l_loginBtnWrapper">
+                        <button class="c_button01 c_button01_blue" id="l_loginBtn" tabindex="0">
+                            <p>ログイン</p>
+                        </button>
                     </div>
-                </div>
-            </form>
+                </form>
+            </div>
+            <div class="l_registerLinkWrapper"><a href="./register.html" class="c_link">
+                    <p>アカウント新規登録</p>
+                    <div class="c_link_icon"><svg width="24" height="24"></svg></div>
+                </a></div>
+            <div class="l_reregisterLinkWrapper"><a href="./register.html" class="c_link">
+                    <p>パスワード再登録</p>
+                    <div class="c_link_icon"><svg width="24" height="24"></svg></div>
+                </a></div>
         </section>
     </main>
 
-    <!-- 共通JavaScript -->
-    <script src="https://uniqueseaweb.github.io/prototype/components/files/css/events.js"></script>
-    <!-- 個別JavaScript -->
-    <script src="../loginForm_files/css/login.js?20240420"></script>
+    <!-- フッター -->
+    <footer>
+        <p>&copy; 2024 Unique Sea. All rights reserved</p>
+    </footer>
+
+    <!-- 画面共通JavaScript -->
+    <script src="../loginAuthentication_files/css/events.js"></script>
+    <script src="../loginAuthentication_files/css/common.js"></script>
+    <!-- 画面個別JavaScript -->
+    <script src="../loginAuthentication_files/css/login.js"></script>
 </body>
 
 </html>

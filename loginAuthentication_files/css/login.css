@@ -1,0 +1,37 @@
+/** ログイン画面 **/
+body {
+    background-color: #F2FAF9;
+}
+
+main {
+    padding: 24px 20px 0;
+}
+
+@media (min-width: 760px) {
+    .l_formSec {
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 0;
+    }
+}
+
+.l_formWrapper {
+
+}
+
+.l_form {
+    padding: 16px;
+    border-radius: 24px;
+    background-color: #F2FAF9;
+}
+
+.l_formItem+.l_formItem {
+    padding-top: 24px;
+}
+
+.l_loginBtnWrapper {
+    width: 280px;
+    margin: 0 auto;
+    padding: 48px 0;
+}

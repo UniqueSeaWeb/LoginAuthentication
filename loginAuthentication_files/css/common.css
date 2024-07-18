@@ -1,0 +1,70 @@
+/** 画面共通CSS **/
+/* フォント */
+@font-face {
+    font-family: 'NotoSansJP';
+    src: url('NotoSansJP-Regular.ttf') format('truetype'),
+        url('NotoSansJP-Bold.ttf') format('truetype') 700;
+}
+
+body {
+    font-family: 'NotoSansJP', sans-serif;
+}
+
+/* レイアウト */
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100lvh;
+    height: 100vh;
+}
+
+main {
+    flex-grow: 1;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 8px 20px;
+}
+
+.com_logo_sp,
+.com_logo_pc {
+    width: auto;
+    height: 48px;
+}
+
+.com_logo_pc {
+    display: none;
+}
+
+@media (min-width: 760px) {
+    .com_logo_sp {
+        display: none;
+    }
+
+    .com_logo_pc {
+        display: initial;
+    }
+}
+
+.com_ttl {
+    padding-left: 16px;
+}
+
+.com_ttl>h1 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+footer {
+    padding: 8px 20px;
+}
+
+footer>p {
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+}
